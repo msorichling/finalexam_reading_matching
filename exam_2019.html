@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2019 - Exceptional Places to Live</title>
+    
+    <style>
+        body {
+            font-family: 'Verdana', Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #F5F5F7;
+            color: #1D1D1F;
+        }
+        h1 {
+            text-align: center;
+        }
+        .exercise {
+            margin: 20px 0;
+        }
+        .sentence-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .sentence {
+            flex: 1;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 10px;
+        }
+        .gap-box {
+            flex: 0 0 60px;
+            padding: 10px;
+            background-color: #E0E0E0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .solution {
+            margin-top: 20px;
+            display: none;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007AFF;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #005BB5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>2019 - Exceptional Places to Live</h1>
+    
+    <div class="exercise">
+        <p>Look at the text. Six sentences have been removed from the text. Choose the correct gap (1-8) in the text for each of the sentences below (A-F). Write the correct number of the gap behind each sentence. Be careful: There are two gaps which you do not need to use.</p>
+        
+        <div class="sentence-container">
+            <div class="sentence"><strong>A</strong> And in fact, they were perfectly right to party, because living in this place has always been a challenge.</div>
+            <div class="gap-box"><input type="text" placeholder="Your answer"></div>
+        </div>
+        
+        <div class="sentence-container">
+            <div class="sentence"><strong>B</strong> Living in such hard conditions may be difficult, but there is a profitable side to it.</div>
+            <div class="gap-box"><input type="text" placeholder="Your answer"></div>
+        </div>
+        
+        <div class="sentence-container">
+            <div class="sentence"><strong>C</strong> In June, July and August temperatures of 30 °C are often reached during the day.</div>
+            <div class="gap-box"><input type="text" placeholder="Your answer"></div>
+        </div>
+
+        <div class="sentence-container">
+            <div class="sentence"><strong>D</strong> Whatever the reason, it is a good thing to have some time to ourselves in a location far-removed from our daily lives at times.</div>
+            <div class="gap-box"><input type="text" placeholder="Your answer"></div>
+        </div>
+
+        <div class="sentence-container">
+            <div class="sentence"><strong>E</strong> There is hardly any other profession to choose here.</div>
+            <div class="gap-box"><input type="text" placeholder="Your answer"></div>
+        </div>
+
+        <div class="sentence-container">
+            <div class="sentence"><strong>F</strong> Today, however, visitors might take synthetic fibres with them for warmth.</div>
+            <div class="gap-box"><input type="text" placeholder="Your answer"></div>
+        </div>
+        
+        <button class="button" onclick="showSolution()">Show Solution</button>
+        
+        <div class="solution">
+            <h3>Solution</h3>
+            <p>A: 4</p>
+            <p>B: 7</p>
+            <p>C: 3</p>
+            <p>D: 1</p>
+            <p>E: 5</p>
+            <p>F: 2</p>
+        </div>
+    </div>
+
+    <script>
+        function showSolution() {
+            document.querySelector('.solution').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
